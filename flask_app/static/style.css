@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(14, 14, 14);
+}
+
+.column {
+    width: 40%;
+    background-color: rgb(48, 48, 48);
+    height: 90%;
+    border-radius: .5em;
+}
+
+.btn {
+    background-color: rgb(255, 148, 27);
+    border-radius: .3em;
+    margin: 20px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn a, .btn input {
+    margin:10px;
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(14, 14, 14);
+    font-size: 1em;
+}
+
+.btn input {
+    background-color: rgb(255, 148, 27);
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 60%
+}
+
+h2 {
+    color:rgb(255, 148, 27);
+    margin: 20px;
+}
+
+label {
+    color: rgb(255, 148, 27);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    border-radius: .25em;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    overflow-y: scroll;
+    background-color: white;
+}
+
+.box a {
+    color: rgb(14, 14, 14);
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.textbox {
+    border-radius: .3em;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+}
+
+.form_btn {
+    margin-left: 0;
+}
+
+.width-fix {
+    width: 52%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+    margin: 20px;
+}
+
+.height-limit {
+    margin: 20px;
+    width: 60%;
+    max-height: 70%;
+    overflow-y: auto;
+}
+
+td {
+    padding: 10px;
+}
+
+thead {
+    background-color: rgb(14, 14, 14);
+    color: rgb(255, 148, 27);
+}
+
+th:first-child {
+    border-top-left-radius: .5em;
+}
+
+th:last-child {
+    border-top-right-radius: .5em;
+}
+
+th {
+    padding: 10px 0;
+}
+
+tbody {
+    background-color: rgb(131, 131, 131);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(202, 202, 202);
+}
+
+.age_input {
+    width: 20%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 148, 27);
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 148, 27);
+}
+
+.book_show_p {
+    color: rgb(255, 148, 27);
+    margin-left: 20px;
+}
+
+.bookfaves {
+    color: rgb(202, 202, 202);
+    margin: 20px;
+}

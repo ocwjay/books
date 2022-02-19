@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="column">
+        <h2>New Books</h2>
+        <form action="/new_book_submit" method="post">
+            <label>
+                Title:
+                <input type="text" name="title" id="title" class="textbox">
+            </label>
+            <label>
+                Number of pages:
+                <input type="number" name="num_of_pages" id="num_of_pages" class="textbox">
+            </label>
+            <div class="btn form_btn">
+                <input type="submit" value="Create">
+            </div>
+        </form>
+        <div class="btn">
+            <a href="/">Home</a>
+        </div>
+    </div>
+    <div class="column">
+        <h2>All Books</h2>
+        <div class="box">
+            {% for book in all_books %}
+                <a href="/book_show/{{ book.id }}">{{ book.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
